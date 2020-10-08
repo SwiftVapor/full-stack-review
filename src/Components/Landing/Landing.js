@@ -20,6 +20,8 @@ class Landing extends Component {
         }
     }
 
+
+
     handleInput = (event) => {
         this.setState({[event.target.name]: event.target.value})
     }
@@ -103,5 +105,7 @@ class Landing extends Component {
         )
     }
 }
+
+const mapStateToProps = reduxState => reduxState;
 
 export default connect(null, {getUser})(Landing);
